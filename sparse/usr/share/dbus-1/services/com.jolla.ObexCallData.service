@@ -1,0 +1,3 @@
+[D-BUS Service]
+Name=com.jolla.ObexCallData
+Exec=/usr/libexec/obexd-calldata-provider
