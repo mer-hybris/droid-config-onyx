@@ -13,6 +13,7 @@
 %define have_modem 1
 
 Provides: ofono-configs
+Provides: bluez-configs
 
 # Packages to be uninstalled
 Obsoletes: ofono-configs-mer
