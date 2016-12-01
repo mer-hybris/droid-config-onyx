@@ -1,0 +1,11 @@
+[Unit]
+Description=Set RGB LED ramp rate to 5 ms
+DefaultDependencies=false
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh /usr/bin/droid/rgb-led-ramp-rate.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
