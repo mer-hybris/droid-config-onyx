@@ -13,8 +13,6 @@
 
 # Adjust this for your device
 %define pixel_ratio 1.75
-# We assume most devices will
-%define have_modem 1
 
 Provides: ofono-configs
 
