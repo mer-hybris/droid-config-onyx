@@ -6,7 +6,7 @@ echo Starting | systemd-cat -p info -t "droid-hcismd-up.sh"
 setprop ro.qualcomm.bt.hci_transport smd
 
 # initialise chip
-init_output=$(/system/bin/hci_qcomm_init -e -d /dev/ttyHS0 2>1)
+init_output=$(/system/bin/hci_qcomm_init -e -d /dev/ttyHS0 2>&1)
 echo $init_output | systemd-cat -p info -t "droid-hcismd-up.sh"
 
 bt_mac=$(echo $init_output | grep -oP '([0-9a-f]{2}:){5}([0-9a-f]{2})')
