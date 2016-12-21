@@ -1,0 +1,11 @@
+[Unit]
+Description=Enables doubletap to wake in actdead mode
+DefaultDependencies=false
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh -c '/bin/echo -n 1 > /proc/touchpanel/double_tap_enable'
+RemainAfterExit=yes
+
+[Install]
+WantedBy=actdead.target
