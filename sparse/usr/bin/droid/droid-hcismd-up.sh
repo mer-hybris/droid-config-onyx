@@ -11,6 +11,11 @@ echo $init_output | systemd-cat -p info -t "droid-hcismd-up.sh"
 
 bt_mac=$(echo $init_output | grep -oP '([0-9a-f]{2}:){5}([0-9a-f]{2})')
 
+if [ -z "$bt_mac" ] ; then
+  echo Setting bluetooth address failed - not setting empty address | systemd-cat -p info -t "droid-hcismd-up.sh"
+  exit 1
+fi
+
 echo Setting bluetooth address to $bt_mac | systemd-cat -p info -t "droid-hcismd-up.sh"
 echo $bt_mac > /var/lib/bluetooth/board-address
 
