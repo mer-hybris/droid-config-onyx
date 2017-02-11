@@ -23,3 +23,8 @@ Obsoletes: usb-moded-diag-mode-android
 Obsoletes: usb-moded-pc-suite-mode-android
 
 %include droid-configs-device/droid-configs.inc
+
+%pre
+if [ "$1" = "2" ]; then
+  rm /etc/acdbdata/ -r
+fi
