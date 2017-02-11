@@ -12,7 +12,7 @@
 %define community_adaptation 1
 
 # Adjust this for your device
-%define pixel_ratio 1.75
+%define pixel_ratio 1.8
 
 Provides: ofono-configs
 
