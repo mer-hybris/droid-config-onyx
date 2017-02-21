@@ -9,6 +9,9 @@ else
       echo "lescan already done" | systemd-cat -p info -t "bluetooth-rfkill.sh"
       exit 0
     fi
+    if [ "`getprop droid.bt.scanned`" != "false" ]; then
+      sleep 5
+    fi
     echo "performing initial lescan" | systemd-cat -p info -t "bluetooth-rfkill.sh"
     hcitool lescan &
     pid=$!
