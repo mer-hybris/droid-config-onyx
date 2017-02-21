@@ -26,5 +26,5 @@ Obsoletes: usb-moded-pc-suite-mode-android
 
 %pre
 if [ "$1" = "2" ]; then
-  rm /etc/acdbdata/ -r
+  rm /etc/acdbdata/ -r || :
 fi
