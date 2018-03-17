@@ -93,5 +93,8 @@ Requires:
 # Flashlight
 - jolla-settings-system-flashlight
 
+# For camera module detection [FP2 has it]
+#- droid-camres
+
 Summary: Jolla HW Adaptation onyx
 
