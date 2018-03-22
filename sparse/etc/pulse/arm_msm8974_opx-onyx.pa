@@ -38,7 +38,7 @@ load-module module-augment-properties
 
 load-module module-null-sink sink_name=sink.null rate=48000
 
-load-module module-droid-card rate=48000 mute_routing_before=24576 mute_routing_after=4096
+load-module module-droid-card rate=48000 mute_routing_before=24576 mute_routing_after=4096 quirks=-input_atoi
 
 ### Audioflingerglue
 load-module module-droid-glue
