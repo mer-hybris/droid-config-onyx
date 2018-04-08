@@ -10,7 +10,7 @@ Requires:
 - droid-config-onyx-policy-settings
 - droid-config-onyx-preinit-plugin
 - droid-config-onyx-flashing
-- droid-config-onyx-bluez4
+- droid-config-onyx-bluez5
 - droid-hal-version-onyx
 
 # Hybris packages
