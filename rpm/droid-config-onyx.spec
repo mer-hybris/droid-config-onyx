@@ -21,6 +21,8 @@
 
 Provides: ofono-configs
 
+%define ofono_enable_plugins hfp_ag_bluez5
+
 # Packages to be uninstalled
 #Obsoletes: ofono-configs-mer
 #Obsoletes: usb-moded-mass-storage-android-config
