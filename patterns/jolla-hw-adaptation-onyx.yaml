@@ -74,7 +74,7 @@ Requires:
 - geoclue-provider-hybris
 
 # Mount SD-Card
-- sd-utils
+- udisks2
 
 # OnePlus X specific packages
 - triambience
@@ -82,7 +82,6 @@ Requires:
 - onyx-triambience-settings-plugin
 - gestured
 - onyx-gesture-settings-plugin
-- usbstick-utils
 - camera-settings-plugin
 - buttonjackd
 
@@ -95,6 +94,9 @@ Requires:
 
 # For camera module detection [FP2 has it]
 #- droid-camres
+
+Obsoletes:
+- usbstick-utils
 
 Summary: Jolla HW Adaptation onyx
 
