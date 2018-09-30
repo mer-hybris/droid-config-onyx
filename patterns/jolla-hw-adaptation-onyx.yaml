@@ -95,8 +95,5 @@ Requires:
 # For camera module detection [FP2 has it]
 #- droid-camres
 
-Obsoletes:
-- usbstick-utils
-
 Summary: Jolla HW Adaptation onyx
 

@@ -25,6 +25,7 @@ Provides: ofono-configs
 %define ofono_disable_plugins bluez4,dun_gw_bluez4,hfp_ag_bluez4,hfp_bluez4,dun_gw_bluez5,hfp_bluez5
 
 # Packages to be uninstalled
+Obsoletes: usbstick-utils
 #Obsoletes: ofono-configs-mer
 #Obsoletes: usb-moded-mass-storage-android-config
 #Obsoletes: usb-moded-diag-mode-android
