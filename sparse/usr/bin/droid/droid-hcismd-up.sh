@@ -9,7 +9,7 @@ setprop ro.qualcomm.bt.hci_transport smd
 init_output=$(/system/bin/hci_qcomm_init -e -d /dev/ttyHS0 2>&1)
 echo $init_output | systemd-cat -p info -t "droid-hcismd-up.sh"
 
-bt_mac=$(echo $init_output | grep -oP '([0-9a-f]{2}:){5}([0-9a-f]{2})')
+bt_mac=$(echo $init_output | grep -oE '([0-9a-f]{2}:){5}([0-9a-f]{2})')
 
 if [ -z "$bt_mac" ] ; then
   echo Setting bluetooth address failed - not setting empty address | systemd-cat -p info -t "droid-hcismd-up.sh"
